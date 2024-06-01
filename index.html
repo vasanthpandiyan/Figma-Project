@@ -3,6 +3,7 @@
   <head>
     <title>Project2Hire</title>
     <link rel="stylesheet" href="style.css" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
     <link
       rel="stylesheet"
       href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css"
@@ -23,7 +24,7 @@
         <li><a href="#">Find works</a></li>
         <li><a href="#">Contact</a></li>
       </ul>
-      <div>
+      <div class="btn-container">
         <button class="btn-white">Sign up</button>
         <button>Log in</button>
       </div>
@@ -118,90 +119,88 @@
       </div>
     </div>
 
-    <div class="video-container">
-      <div class="v-container">
-        <div class="text-section">
-          <h1>How Project2hire Works</h1>
+    <div class="v-container">
+      <div class="text-section">
+        <h1>How Project2hire Works</h1>
+        <p>
+          Project2hire is not a freelance marketplace like Upwork or Fiver.
+          Instead, we're a lead generation tool you can plug into your existing
+          freelance business. Here's what happens once you sign up...
+        </p>
+      </div>
+      <div class="image-section">
+        <iframe
+          src="https://www.youtube.com/embed/FBhepLUwTPA"
+          title="Listrak Recruitment Video"
+          frameborder="0"
+          referrerpolicy="strict-origin-when-cross-origin"
+        ></iframe>
+      </div>
+    </div>
+    <div class="below-iframe-container">
+      <div class="steps-container">
+        <div class="step">
+          <div class="step-number">1</div>
+          <p>You tell us what kinds of freelance gigs you want.</p>
+        </div>
+        <div class="step">
+          <div class="step-number">2</div>
+          <p>We search dozens of source to find your ideal clients</p>
+        </div>
+        <div class="step">
+          <div class="step-number">3</div>
+          <p>You get alerted when we find a good match</p>
+        </div>
+        <div class="step">
+          <div class="step-number">4</div>
+          <p>You send a pitch directly at the lead souce</p>
+        </div>
+        <div class="step">
+          <div class="step-number">5</div>
           <p>
-            Project2hire is not a freelance marketplace like Upwork or Fiver.
-            Instead, we're a lead generation tool you can plug into your
-            existing freelance business. Here's what happens once you sign up...
-          </p>
-        </div>
-        <div class="image-section">
-          <iframe
-            src="https://www.youtube.com/embed/FBhepLUwTPA"
-            title="Listrak Recruitment Video"
-            frameborder="0"
-            height="250"
-            width="500"
-            referrerpolicy="strict-origin-when-cross-origin"
-          ></iframe>
-        </div>
-      </div>
-    </div>
-
-    <div class="steps-container">
-      <div class="step">
-        <div class="step-number">1</div>
-        <p>You tell us what kinds of freelance gigs you want.</p>
-      </div>
-      <div class="step">
-        <div class="step-number">2</div>
-        <p>We search dozens of source to find your ideal clients</p>
-      </div>
-      <div class="step">
-        <div class="step-number">3</div>
-        <p>You get alerted when we find a good match</p>
-      </div>
-      <div class="step">
-        <div class="step-number">4</div>
-        <p>You send a pitch directly at the lead souce</p>
-      </div>
-      <div class="step">
-        <div class="step-number">5</div>
-        <p>You win more of your ideal clients & grow your freelance business</p>
-      </div>
-    </div>
-    <div class="email-signup">
-      <input type="email" placeholder="Type your email" />
-      <button class="signup-button">GET LEADS</button>
-    </div>
-    <div class="email-footer">
-      <p>Try for free. Upgrade starting at $12/mo. Cancel anytime.</p>
-    </div>
-    <div class="testimonials-container">
-      <h1 class="testimonials-header">Quotes</h1>
-      <h2>From our users</h2>
-
-      <div class="d-flex">
-        <div class="quote-block">
-          <!-- <img src="" alt="img" /> -->
-          <p class="quote-text">
-            "I love ProjectX (AngelList Talent). I got my current job at a
-            startup through them. It's super easy to use and it's always on the
-            list last year for the ui"
-          </p>
-        </div>
-
-        <div class="quote-block">
-          <p class="quote-text">
-            "I can't imagine my day to day without this platform. life would be
-            a lot more difficult"
-          </p>
-        </div>
-
-        <div class="quote-block">
-          <p class="quote-text">
-            "Half of all projects here are sourced from ProjectX (hire.it). It's
-            the best product for anyone looking for startup talent and freelance
-            projects."
+            You win more of your ideal clients & grow your freelance business
           </p>
         </div>
       </div>
-    </div>
-    <h2 class="title">What real freelancers are saying:</h2>
-    <div class="video-container">
+      <div class="email-signup">
+        <input type="email" placeholder="Type your email" />
+        <button class="signup-button">GET LEADS</button>
+      </div>
+      <div class="email-footer">
+        <p>Try for free. Upgrade starting at $12/mo. Cancel anytime.</p>
+      </div>
+      <div class="testimonials-container">
+        <h1 class="testimonials-header">Quotes</h1>
+        <h2>From our users</h2>
+
+        <div class="d-flex quotes-container">
+          <div class="quote-block">
+            <!-- <img src="" alt="img" /> -->
+            <p class="quote-text">
+              "I love ProjectX (AngelList Talent). I got my current job at a
+              startup through them. It's super easy to use and it's always on
+              the list last year for the ui"
+            </p>
+          </div>
+
+          <div class="quote-block">
+            <p class="quote-text">
+              "I can't imagine my day to day without this platform. life would
+              be a lot more difficult"
+            </p>
+          </div>
+
+          <div class="quote-block">
+            <p class="quote-text">
+              "Half of all projects here are sourced from ProjectX (hire.it).
+              It's the best product for anyone looking for startup talent and
+              freelance projects."
+            </p>
+          </div>
+        </div>
+      </div>
+      <h2 class="title">What real freelancers are saying:</h2>
+
       <div class="v-container">
         <div class="image-section">
           <iframe
@@ -221,131 +220,275 @@
           </p>
         </div>
       </div>
-    </div>
-    <div class="find-next-container">
-      <div>
-        <h1>
-          We have a lot of exciting startup opportunities and candidates -- only
-          a few are perfect for you.
-        </h1>
-        <p>We'll help you find the few.</p>
-        <button>Find what's Next</button>
+      <div class="iframe2-container">
+        <div class="find-next-container">
+          <div>
+            <h1>
+              We have a lot of exciting startup opportunities and candidates --
+              only a few are perfect for you.
+            </h1>
+            <p>We'll help you find the few.</p>
+            <button>Find what's Next</button>
+          </div>
+        </div>
+        <table class="skillset-table-mobile">
+          <thead>
+            <h2 class="title">Discover our expert skillset</h2>
+          </thead>
+          <tr>
+            <td>
+              <div class="td">
+                Web Development <span class="plus-icon"></span>
+              </div>
+            </td>
+          </tr>
+          <tr>
+            <td>
+              <div class="td">
+                Mobile Development<span class="plus-icon"></span>
+              </div>
+            </td>
+          </tr>
+          <tr>
+            <td>
+              <div class="td">
+                UXUI Designers <span class="plus-icon"></span>
+              </div>
+            </td>
+          </tr>
+          <tr>
+            <td>
+              <div class="td">
+                DevOps & Cloud Computing<span class="plus-icon"></span>
+              </div>
+            </td>
+          </tr>
+          <tr>
+            <td>
+              <div class="td">
+                Database & Big Data Technologies <span class="plus-icon"></span>
+              </div>
+            </td>
+          </tr>
+          <tr>
+            <td>
+              <div class="td">
+                Data Science & AI<span class="plus-icon"></span>
+              </div>
+            </td>
+          </tr>
+          <tr>
+            <td>
+              <div class="td">
+                Programming Languages <span class="plus-icon"></span>
+              </div>
+            </td>
+          </tr>
+          <tr>
+            <td>
+              <div class="td">CMS Platforms<span class="plus-icon"></span></div>
+            </td>
+          </tr>
+          <tr>
+            <td>
+              <div class="td">
+                Software Development Roles<span class="plus-icon"></span>
+              </div>
+            </td>
+          </tr>
+          <tr>
+            <td>
+              <div class="td">
+                E-Commerce & CRM Platforms<span class="plus-icon"></span>
+              </div>
+            </td>
+          </tr>
+          <tr>
+            <td>
+              <div class="td">
+                Quality Assurance & Testing <span class="plus-icon"></span>
+              </div>
+            </td>
+          </tr>
+          <tr>
+            <td>
+              <div class="td">
+                visual & Brand Design<span class="plus-icon"></span>
+              </div>
+            </td>
+          </tr>
+          <tr>
+            <td>
+              <div class="td">
+                API Development & Integration <span class="plus-icon"></span>
+              </div>
+            </td>
+          </tr>
+          <tr>
+            <td>
+              <div class="td">
+                Product & Project Management<span class="plus-icon"></span>
+              </div>
+            </td>
+          </tr>
+          <tr>
+            <td>
+              <div class="td">
+                Blockchain Development<span class="plus-icon"></span>
+              </div>
+            </td>
+          </tr>
+          <tr>
+            <td>
+              <div class="td">
+                Finance and Buisness Consulting<span class="plus-icon"></span>
+              </div>
+            </td>
+          </tr>
+          <tr>
+            <td>
+              <div class="td">
+                Desktop Development<span class="plus-icon"></span>
+              </div>
+            </td>
+          </tr>
+          <tr>
+            <td>
+              <div class="td">
+                Trending Skills & Roles<span class="plus-icon"></span>
+              </div>
+            </td>
+          </tr>
+          <tr>
+            <td>
+              <div class="td">
+                AR/VR & Games Development<span class="plus-icon"></span>
+              </div>
+            </td>
+          </tr>
+        </table>
+        <table class="skillset-table">
+          <!-- <thead>
+            <h2 class="title">Discover our expert skillset</h2>
+          </thead> -->
+          <tr>
+            <td>
+              <div class="td">
+                Web Development <span class="plus-icon"></span>
+              </div>
+            </td>
+            <td>
+              <div class="td">
+                Mobile Development<span class="plus-icon"></span>
+              </div>
+            </td>
+          </tr>
+          <tr>
+            <td>
+              <div class="td">
+                UXUI Designers <span class="plus-icon"></span>
+              </div>
+            </td>
+            <td>
+              <div class="td">
+                DevOps & Cloud Computing<span class="plus-icon"></span>
+              </div>
+            </td>
+          </tr>
+          <tr>
+            <td>
+              <div class="td">
+                Database & Big Data Technologies <span class="plus-icon"></span>
+              </div>
+            </td>
+            <td>
+              <div class="td">
+                Data Science & AI<span class="plus-icon"></span>
+              </div>
+            </td>
+          </tr>
+          <tr>
+            <td>
+              <div class="td">
+                Programming Languages <span class="plus-icon"></span>
+              </div>
+            </td>
+            <td>
+              <div class="td">CMS Platforms<span class="plus-icon"></span></div>
+            </td>
+          </tr>
+          <tr>
+            <td>
+              <div class="td">
+                Software Development Roles<span class="plus-icon"></span>
+              </div>
+            </td>
+            <td>
+              <div class="td">
+                E-Commerce & CRM Platforms<span class="plus-icon"></span>
+              </div>
+            </td>
+          </tr>
+          <tr>
+            <td>
+              <div class="td">
+                Quality Assurance & Testing <span class="plus-icon"></span>
+              </div>
+            </td>
+            <td>
+              <div class="td">
+                visual & Brand Design<span class="plus-icon"></span>
+              </div>
+            </td>
+          </tr>
+          <tr>
+            <td>
+              <div class="td">
+                API Development & Integration <span class="plus-icon"></span>
+              </div>
+            </td>
+            <td>
+              <div class="td">
+                Product & Project Management<span class="plus-icon"></span>
+              </div>
+            </td>
+          </tr>
+          <tr>
+            <td>
+              <div class="td">
+                Blockchain Development<span class="plus-icon"></span>
+              </div>
+            </td>
+            <td>
+              <div class="td">
+                Finance and Buisness Consulting<span class="plus-icon"></span>
+              </div>
+            </td>
+          </tr>
+          <tr>
+            <td>
+              <div class="td">
+                Desktop Development<span class="plus-icon"></span>
+              </div>
+            </td>
+            <td>
+              <div class="td">
+                Trending Skills & Roles<span class="plus-icon"></span>
+              </div>
+            </td>
+          </tr>
+          <tr>
+            <td>
+              <div class="td">
+                AR/VR & Games Development<span class="plus-icon"></span>
+              </div>
+            </td>
+            <td>
+              <div class="td"></div>
+            </td>
+          </tr>
+        </table>
       </div>
     </div>
-    <table class="skillset-table">
-      <thead>
-        <h2 class="title">Discover our expert skillset</h2>
-      </thead>
-      <tr>
-        <td>
-          <div class="td">Web Development <span class="plus-icon"></span></div>
-        </td>
-        <td>
-          <div class="td">
-            Mobile Development<span class="plus-icon"></span>
-          </div>
-        </td>
-      </tr>
-      <tr>
-        <td>
-          <div class="td">UXUI Designers <span class="plus-icon"></span></div>
-        </td>
-        <td>
-          <div class="td">
-            DevOps & Cloud Computing<span class="plus-icon"></span>
-          </div>
-        </td>
-      </tr>
-      <tr>
-        <td>
-          <div class="td">
-            Database & Big Data Technologies <span class="plus-icon"></span>
-          </div>
-        </td>
-        <td>
-          <div class="td">Data Science & AI<span class="plus-icon"></span></div>
-        </td>
-      </tr>
-      <tr>
-        <td>
-          <div class="td">
-            Programming Languages <span class="plus-icon"></span>
-          </div>
-        </td>
-        <td>
-          <div class="td">CMS Platforms<span class="plus-icon"></span></div>
-        </td>
-      </tr>
-      <tr>
-        <td>
-          <div class="td">
-            Software Development Roles<span class="plus-icon"></span>
-          </div>
-        </td>
-        <td>
-          <div class="td">
-            E-Commerce & CRM Platforms<span class="plus-icon"></span>
-          </div>
-        </td>
-      </tr>
-      <tr>
-        <td>
-          <div class="td">
-            Quality Assurance & Testing <span class="plus-icon"></span>
-          </div>
-        </td>
-        <td>
-          <div class="td">
-            visual & Brand Design<span class="plus-icon"></span>
-          </div>
-        </td>
-      </tr>
-      <tr>
-        <td>
-          <div class="td">
-            API Development & Integration <span class="plus-icon"></span>
-          </div>
-        </td>
-        <td>
-          <div class="td">
-            Product & Project Management<span class="plus-icon"></span>
-          </div>
-        </td>
-      </tr>
-      <tr>
-        <td>
-          <div class="td">
-            Blockchain Development<span class="plus-icon"></span>
-          </div>
-        </td>
-        <td>
-          <div class="td">
-            Finance and Buisness Consulting<span class="plus-icon"></span>
-          </div>
-        </td>
-      </tr>
-      <tr>
-        <td>
-          <div class="td">
-            Desktop Development<span class="plus-icon"></span>
-          </div>
-        </td>
-        <td>
-          <div class="td">
-            Trending Skills & Roles<span class="plus-icon"></span>
-          </div>
-        </td>
-      </tr>
-      <tr>
-        <td>
-          <div class="td">
-            AR/VR & Games Development<span class="plus-icon"></span>
-          </div>
-        </td>
-        <td>
-          <div class="td"></div>
-        </td>
-      </tr>
-    </table>
   </body>
 </html>

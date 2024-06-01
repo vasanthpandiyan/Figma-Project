@@ -414,3 +414,94 @@ th {
   font-size: large;
   color: #848484;
 }
+
+iframe {
+  height: 100%;
+  width: 100%;
+}
+.skillset-table-mobile {
+  display: none;
+}
+@media (480px <= width <= 768px) {
+}
+@media (width <= 480px) {
+  .navbar {
+    width: auto;
+    padding: 5px 20px;
+    ul {
+      display: none;
+    }
+    .btn-container {
+      display: none;
+    }
+  }
+  .banner {
+    padding: 5px 20px;
+    .search-bar {
+      display: block;
+      .search-bar-with-button {
+        width: 100%;
+      }
+    }
+    .text-part {
+      width: 100%;
+    }
+    .person {
+      display: none;
+    }
+  }
+  .kpi-container {
+    display: block;
+  }
+
+  .container {
+    padding: 5px 20px;
+    display: block;
+  }
+  .v-container {
+    display: block;
+    .text-section {
+      width: auto;
+    }
+    .image-section {
+      width: 100%;
+      height: 40vh;
+    }
+  }
+  .below-iframe-container {
+    position: relative;
+    top: 40vh;
+  }
+  .testimonials-container {
+    padding: 5px 20px;
+    .quote-block {
+      width: auto;
+    }
+    .quotes-container {
+      display: block;
+    }
+  }
+  .iframe2-container {
+    position: relative;
+    top: 40vh;
+  }
+  td {
+    padding: 15px;
+  }
+  .skillset-table {
+    display: none;
+    visibility: hidden;
+    h2 {
+      display: none;
+    }
+  }
+  .skillset-table-mobile {
+    display: table;
+    width: 100%;
+    .td {
+      width: 100%;
+      display: flex;
+      justify-content: space-between;
+    }
+  }
+}
