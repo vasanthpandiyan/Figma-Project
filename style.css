@@ -10,12 +10,13 @@ body {
   background-color: #f8f9fa;
   padding: 30px 100px;
   align-items: center;
-  .btn-white {
-    background-color: white;
-    color: #17a700;
-    border: 1px solid #17a700;
-    border-radius: 20%/50%;
-  }
+}
+
+.navbar .btn-white {
+  background-color: white;
+  color: #17a700;
+  border: 1px solid #17a700;
+  border-radius: 20%/50%;
 }
 .navbar ul {
   display: flex;
@@ -44,6 +45,9 @@ body {
   cursor: pointer;
   height: 30px;
   min-width: 70px;
+}
+.navbar .navImg {
+  height: 50px;
 }
 .header {
   background-image: url("background.jpg");
@@ -83,26 +87,26 @@ body {
   align-items: center;
   padding: 50px 100px;
   min-height: 50vh;
-  .text-part {
-    width: 70%;
-    line-height: 50px;
-    p {
-      font-size: large;
-      line-height: 40px;
-    }
-  }
-  .person {
-    width: 30%;
-    display: flex;
-    justify-content: center;
-    align-items: flex-end;
-    img {
-      height: 60vh;
-      width: 80%;
-      position: relative;
-      top: 12vh;
-    }
-  }
+}
+.banner .text-part {
+  width: 75%;
+  line-height: 50px;
+}
+.banner p {
+  font-size: large;
+  line-height: 40px;
+}
+.banner .person {
+  width: 35%;
+  display: flex;
+  justify-content: center;
+  align-items: flex-end;
+}
+.banner .person img {
+  height: 65vh;
+  width: 100%;
+  position: relative;
+  top: 7vh;
 }
 
 .search-bar {
@@ -170,6 +174,7 @@ body {
 .kpi-item {
   margin: 20px 0;
   display: flex;
+  gap: 2vw;
 }
 .kpi-icon {
   font-size: 32px;
@@ -435,23 +440,51 @@ iframe {
       display: none;
     }
   }
+  .navbar .navImg {
+    height: 40px;
+  }
+
+  .navbar h5 {
+    font-size: 16px;
+  }
   .banner {
     padding: 5px 20px;
-    .search-bar {
-      display: block;
-      .search-bar-with-button {
-        width: 100%;
-      }
-    }
-    .text-part {
-      width: 100%;
-    }
+
     .person {
       display: none;
     }
   }
+  .banner .search-bar {
+    display: block;
+  }
+  .banner .search-bar .search-bar-with-button {
+    width: 100%;
+    margin-bottom: 2vh;
+  }
+  .banner .text-part {
+    width: 100%;
+    line-height: normal;
+  }
+
+  .banner .text-part h1 {
+    font-size: 28px;
+  }
+
+  .banner .text-part .course-list {
+    margin-bottom: 2vh;
+  }
+  .banner p {
+    line-height: normal;
+  }
+  .service-button {
+    padding: 5px;
+  }
   .kpi-container {
     display: block;
+  }
+
+  .kpi-value {
+    font-size: 24px;
   }
 
   .container {
